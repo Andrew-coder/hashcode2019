@@ -16,6 +16,6 @@ public class Slide {
         for (Image image : images) {
             commonTags.addAll(Arrays.asList(image.tags));
         }
-        return (String[])commonTags.toArray();
+        return commonTags.toArray(new String[commonTags.size()]);
     }
 }

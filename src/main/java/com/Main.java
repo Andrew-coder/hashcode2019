@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
 //        BasicSolution.solve(MyReader.read("PATH_TO_FILE"));
-        List<Image> images = MyReader.read("a_example.txt");
+        List<Image> images = MyReader.read("e_shiny_selfies.txt");
         System.out.println();
     }
 }

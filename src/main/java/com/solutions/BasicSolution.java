@@ -3,6 +3,7 @@ package com.solutions;
 import com.dto.Image;
 import com.dto.Presentation;
 import com.dto.Slide;
+import com.files.MyWriter;
 import com.google.common.collect.Sets;
 
 import java.util.*;
@@ -25,9 +26,12 @@ public class BasicSolution {
             String[] secondSlideArray;
             if (iterator.hasNext()) {
                 secondSlideArray = iterator.next().getCommonTags();
-                long currentDiff = calculateDiff(firstSlideArray, secondSlideArray);
+                long currentDiff = calculateCommon(firstSlideArray, secondSlideArray);
                 result += currentDiff;
+                if(iterator.hasPrevious())
+                    iterator.previous();
             }
+
         }
         return result;
     }

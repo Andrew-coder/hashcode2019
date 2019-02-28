@@ -13,7 +13,8 @@ import java.util.Scanner;
  */
 public class MyReader {
 
-    public static final String PATH = "/home/andrii/javaProjects/hashcode2019/src/main/resources/";
+//    public static final String PATH = "/home/andrii/javaProjects/hashcode2019/src/main/resources/";
+    public static final String PATH = "/home/vladyslav/IdeaProjects/hashcode2019/src/main/resources/";
 
     public static List<Image> read(String fileName) {
         List<Image> images = new ArrayList<>();

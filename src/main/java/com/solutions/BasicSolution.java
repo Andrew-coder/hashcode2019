@@ -10,6 +10,6 @@ import com.files.MyWriter;
 public class BasicSolution {
     public static void solve(Image path_to_file, String fileName) {
         Presentation result = new Presentation();
-        MyWriter.write(result, fileName);
+//        MyWriter.write(result, fileName);
     }
 }

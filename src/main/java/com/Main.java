@@ -1,5 +1,6 @@
 package com;
 
+import com.dto.Image;
 import com.files.MyReader;
 import com.solutions.BasicSolution;
 
@@ -10,6 +11,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        BasicSolution.solve(MyReader.read("PATH_TO_FILE"));
+//        BasicSolution.solve(MyReader.read("PATH_TO_FILE"));
+        List<Image> images = MyReader.read("a_example.txt");
+        System.out.println();
     }
 }
